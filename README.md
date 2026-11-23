@@ -9,7 +9,7 @@ Note that data is sensitive and is not made publicly available by this repositor
 
 ------
 
-Causal survival forests are fit by `makedata/mk_crf_mace.R` and `makedata/mk_crf/diab.R`, and hyperparameter values can be found therein. We fit causal survival forests (CSFs) separately for MACE and diabetes. A 5-year time horizon was considered to balance the number of events and inverse probability of censoring weight (IPCW) stability. All risk factors were used to construct CSFs and estimate IPCWs. Ten-thousand honest trees were fit for each CSF, with 50% sample splitting for each tree and an additional 50% sample splitting for honest estimation. To ensure tree depth and sensitivity with few events, each tree node considered all risk factors, a minimum of 30 participants, and a minimum of 1% of observed events.
+Causal survival forests are fit by `makedata/mk_crf_mace.R` and `makedata/mk_crf_diab.R`, and hyperparameter values can be found therein. We fit causal survival forests (CSFs) separately for MACE and diabetes. A 5-year time horizon was considered to balance the number of events and inverse probability of censoring weight (IPCW) stability. All risk factors were used to construct CSFs and estimate IPCWs. Ten-thousand honest trees were fit for each CSF, with 50% sample splitting for each tree and an additional 50% sample splitting for honest estimation. To ensure tree depth and sensitivity with few events, each tree node considered all risk factors, a minimum of 30 participants, and a minimum of 1% of observed events.
 
 ------
 
